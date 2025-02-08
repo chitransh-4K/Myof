@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+  cursor: default;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+}
+#fake {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+.bounding #loader {
+  padding: 10px;
+  font-size: 10rem;
+  font-family: moonhouse;
+}
+.bounding {
+  overflow: hidden;
+}
+#pg1 {
+  width: 0;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.gola{
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 2px;
+}
+#pg1 #og1 #nav{
+  /* background-color: #0DA34E; */
+  width: 100%;
+  height: 10vh;
+  top: 0;
+  position: absolute;
+  display: flex;
+  cursor: default;
+}
+#pg1 #og1 {
+  flex-wrap: nowrap;
+  width: 0;
+  height: 0;
+  flex-direction: column;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+#pg1 #og1 h1{
+  font-size: 6rem;
+  line-height: 4.8rem;
+}
+#n1{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#n1 h2{
+  font-size: 2.3rem;
+  padding-left: 10px;
+}
+#n2{padding-right: 50px;
+  gap: 50px;
+  width: 70%;
+  font-size: 1.5 rem;
+  font-weight: 200;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#n2 i{
+  font-size: 2rem;
+  font-weight: 100;
+}
+.revealer {
+  overflow: hidden;
+}
+.revealer .reveal{
+  transform: translateY(180%);
+}
+#blob{
+  cursor: pointer;
+  margin-top:20px;
+  background-color: #0DA34E;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+#blob p{
+  color: white;
+  font-size: 1.5rem;
+  -webkit-text-stroke: .5px black;
+}
+#pg2{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #0DA34E;
+  border-radius: 10px;
+}
+
+#menu{
+  width: 100vw;
+  height: 0;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+
+}
+#top{
+  width: 100vw;
+  height:80px;
+  padding: 15px;
+display: flex;
+align-items: center;
+justify-content: end;
+}
+#close{
+  font-size: 3rem;
+  font-weight: 800;
+}
+#mid{
+  width: 100vw;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#mid-1{
+  width: 100vw;
+  height: 50% ;
+  background-color: red;
+}
+#mid-2{
+  width: 100vw;
+  height: 50% ;
+  background-color: aqua;
+}
