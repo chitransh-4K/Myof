@@ -23,7 +23,12 @@ body {
 .bounding #loader {
   padding: 10px;
   font-size: 10rem;
-  font-family: moonhouse;
+    @font-face {
+      font-family: moonhouse;
+      src: url("fonts/Moonhouse-yE5M.ttf") format("moonhouse");
+    }
+    font-family: moonhouse;
+
 }
 .bounding {
   overflow: hidden;
@@ -98,7 +103,7 @@ body {
   overflow: hidden;
 }
 .revealer .reveal{
-  transform: translateY(180%);
+  transform: translateY(200%);
 }
 #blob{
   cursor: pointer;
@@ -140,7 +145,7 @@ body {
 #menu{
   width: 100vw;
   height: 0;
-  background-color: #fff;
+  background-color: #000000;
   position: absolute;
   bottom: 0;
   overflow: hidden;
@@ -157,22 +162,159 @@ justify-content: end;
 #close{
   font-size: 3rem;
   font-weight: 800;
+  color: white;
 }
 #mid{
   width: 100vw;
   height: calc(100vh - 80px);
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+}
+.card{
+  width: 30%;
+  height: 85%;
+  background-color: rgb(22, 21, 21);
+  border-radius: 3%;
+  margin: 20px;
+  overflow: hidden;
+}
+.img{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000000;
+  display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width:600px) {
+
+.bounding #loader {
+  font-size: 5rem;
+}
+
+.gola{
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 1px;
+}
+#pg1 #og1 #nav{
+  /* background-color: #0DA34E; */
+  width: 100%;
+  height: 5vh;
+  top: 0;
+  position: absolute;
+  display: flex;
+  cursor: default;
+}
+
+#pg1 #og1 h1{
+  font-size: 3.5rem;
+  line-height: 3.6rem;
+}
+#n1{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#n1 h2{
+  font-size: 1.3rem;
+  padding-left: 10px;
+}
+#n2{
+  display: none;
+}
+
+#blob{
+  cursor: pointer;
+  margin-top:20px;
+  background-color: #0DA34E;
+  width: 200px;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+#blob p{
+  color: white;
+  font-size: 1rem;
+  -webkit-text-stroke: .5px black;
+}
+
+#top{
+  width: 100vw;
+  height:5vh;
+  padding: 15px;
+display: flex;
+align-items: center;
+justify-content: end;
+background-color: aqua;
+}
+#close{
+  font-size: 1rem;
+}
+#mid{
+  width: 100vw;
+  height: calc(100vh - 5vh);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   flex-direction: column;
 }
-#mid-1{
-  width: 100vw;
-  height: 50% ;
-  background-color: red;
+.card{
+  width: 70%;
+  height: 30%;
+  background-color: rgb(22, 21, 21);
+  border-radius: 3%;
+  margin: 20px;
+  overflow: hidden;
 }
-#mid-2{
-  width: 100vw;
-  height: 50% ;
-  background-color: aqua;
+.img{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 }

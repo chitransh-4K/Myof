@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&display=swap');
+      </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -61,13 +68,54 @@
             <i id="close" class="ri-close-large-line"></i>
           </div>
           <div id="mid">
-            <div id="mid-1"></div>
-            <div id="mid-2"></div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.licdn.com/dms/image/v2/C4E12AQES2SPbxCQi9w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1590410787863?e=2147483647&v=beta&t=DYi7hOnGiTyVVXBjnCmUiMPPzQJwfJ1Lw68scOZd6Ko" alt="">
+                    </div>
+                    <div class="content"></div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://www.codespot.org/assets/css.jpg" alt="">
+                    </div>
+                    <div class="content"></div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://cdn.dribbble.com/users/4924661/screenshots/14090643/media/ec1d5bb9cdb1e8c4e6c3ecb93a6d8cec.png" alt="">
+                    </div>
+                    <div class="content"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://og-image-react-egghead.now.sh/topic/greensock?orientation=landscape&v=20201105" alt="">
+                    </div>
+                    <div class="content"></div>
+                  </div>
+                  <div class="card">
+                    <div class="img"></div>
+                    <div class="content"></div>
+                  </div>
+                  <div class="card">
+                    <div class="img"></div>
+                    <div class="content"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            
           </div>
         </div>
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
