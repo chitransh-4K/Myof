@@ -23,11 +23,7 @@ body {
 .bounding #loader {
   padding: 10px;
   font-size: 10rem;
-  @font-face {
-    font-family: moonhouse;
-    src: url("fonts/Moonhouse-yE5M");
-  }
-  font-family: moonhouse;
+  font-family: 'Modern Bohemian', sans-serif;
 }
 .bounding {
   overflow: hidden;
