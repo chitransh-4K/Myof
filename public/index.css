@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: gilroy;
+  font-family: "Anton", serif;
   cursor: default;
 }
 html,
@@ -23,12 +23,11 @@ body {
 .bounding #loader {
   padding: 10px;
   font-size: 10rem;
-    @font-face {
-      font-family: moonhouse;
-      src: url("fonts/Moonhouse-yE5M.ttf") format("moonhouse");
-    }
+  @font-face {
     font-family: moonhouse;
-
+    src: url("fonts/Moonhouse-yE5M");
+  }
+  font-family: moonhouse;
 }
 .bounding {
   overflow: hidden;
