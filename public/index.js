@@ -1,7 +1,6 @@
-let blob = document.querySelector("#blob");
-let web = document.getElementById("web");
-let menu = document.getElementById("menu");
 let loader = document.getElementById("loader");
+let menubar = document.getElementById("menubar");
+let n3 = document.getElementById("n3")
 let close = document.getElementById("close")
 
 let cn = 0;
@@ -14,51 +13,20 @@ let i = setInterval(() => {
   }
 }, 30);
 
-blob.addEventListener("mouseenter", function () {
-  gsap.to(blob, {
-    width: "360px",
-    height: "60px",
-    marginTop: "33px",
-    marginBottom: "9px",
-  });
-});
-blob.addEventListener("mouseleave", function () {
-  gsap.to(blob, {
-    width: "300px",
-    height: "80px",
-    marginTop: "20px",
-    marginBottom: "0px",
-  });
-});
-blob.addEventListener("click", function () {
-  gsap.to("#menu", {
-    height: "100vh",
-    ease: "power2.out",
-    duration: 1,
-  });
-});
-
-web.addEventListener("click",function(){
-  window.location.href="/web-forge"
+n3.addEventListener("click", function(){
+  gsap.to(menubar,{
+    right:0,
+    duration:0.5,
+    ease:"power2.out"
+  })
+})
+close.addEventListener("click", function(){
+  gsap.to(menubar,{
+    right:"-100%",
+    duration:0.5
+  })
 })
 
-close.addEventListener("click",function(){
-  gsap.to("#menu", {
-    height: 0,
-    ease: "power2.out",
-    duration: 1,
-  });
-})
-var swiper = new Swiper(".mySwiper", {
-  direction: "vertical",
-  slidesPerView: 1,
-  spaceBetween: 30,
-  mousewheel: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
 let tl = gsap.timeline();
 
 tl.to(".boundingelem", {
@@ -82,7 +50,8 @@ tl.to("#pg1 #og1", {
   height: "5%",
   borderRadius: "10px",
   ease: "power2",
-  duration: 2,
+  duration: 2
+
 });
 tl.to("#pg1 #og1", {
   delay: -1,
@@ -92,6 +61,7 @@ tl.to("#pg1 #og1", {
   ease: "power2",
   duration: 1.5,
 });
+
 tl.to(".reveal", {
   y: 0,
   duration: 1,
