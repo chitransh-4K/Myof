@@ -14,4 +14,11 @@ app.get("/web-forge",(req,res)=>{
     res.render("web")
 })
 
+app.get("/about",(req,res)=>{
+    res.send("about")
+})
+app.get("/contact",(req,res)=>{
+    res.send("contact")
+})
+
 app.listen(3000)

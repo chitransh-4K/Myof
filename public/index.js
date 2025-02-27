@@ -3,6 +3,7 @@ let menubar = document.getElementById("menubar");
 let n3 = document.getElementById("n3")
 let close = document.getElementById("close")
 
+
 let cn = 0;
 let i = setInterval(() => {
   if (cn < 100) {
@@ -13,19 +14,7 @@ let i = setInterval(() => {
   }
 }, 30);
 
-n3.addEventListener("click", function(){
-  gsap.to(menubar,{
-    right:0,
-    duration:0.5,
-    ease:"power2.out"
-  })
-})
-close.addEventListener("click", function(){
-  gsap.to(menubar,{
-    right:"-100%",
-    duration:0.5
-  })
-})
+
 
 let tl = gsap.timeline();
 
@@ -67,3 +56,31 @@ tl.to(".reveal", {
   duration: 1,
   stagger: 0.1,
 });
+
+n3.addEventListener("click", function(){
+  gsap.to(menubar,{
+    right:0,
+    duration:0.5,
+    ease:"power2.out"
+  })
+})
+close.addEventListener("click", function(){
+  gsap.to(menubar,{
+    right:"-100%",
+    duration:0.5
+  })
+})
+ function changewf(){
+  window.location.href = '/web-forge'
+ }
+
+ function changea(){
+  window.location.href = '/about'
+ }
+ 
+ function changecu(){
+  window.location.href = '/contact'
+ }
+ function refresh(){
+  window.location.href = '/'
+ }

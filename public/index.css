@@ -177,6 +177,9 @@ body {
   gap: 50px;
   margin-right: 50px;
 }
+#n2 h2{
+  cursor: pointer;
+}
 #n3 {
   width: 0%;
   height: 100%;
@@ -186,6 +189,19 @@ body {
   justify-content: center;
   font-size: 3vw;
   overflow: hidden;
+}
+#go-to-button{
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 400px;
+  height: 60px;
+  background-color: #118B50;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+#go-to-button p{
+  font-size: 6vh;
 }
 @media (max-width: 600px) {
   .bounding #loader {
@@ -227,4 +243,18 @@ body {
     letter-spacing: 3px;
     line-height:8vh;
   }
+  
+#go-to-button{
+  margin-top: 10px;
+  border-radius: 15px;
+  width:250px;
+  height: 50px;
+  background-color: #118B50;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+#go-to-button p{
+  font-size: 5vw;
+}
 }
