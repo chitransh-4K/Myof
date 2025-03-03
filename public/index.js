@@ -57,30 +57,34 @@ tl.to(".reveal", {
   stagger: 0.1,
 });
 
-n3.addEventListener("click", function(){
-  gsap.to(menubar,{
-    right:0,
-    duration:0.5,
-    ease:"power2.out"
+n3.addEventListener("click", function () {
+  gsap.to(menubar, {
+    right: 0,
+    duration: 0.5,
+    ease: "power2.out"
   })
 })
-close.addEventListener("click", function(){
-  gsap.to(menubar,{
-    right:"-100%",
-    duration:0.5
+close.addEventListener("click", function () {
+  gsap.to(menubar, {
+    right: "-100%",
+    duration: 0.5
   })
 })
- function changewf(){
+function changewf() {
   window.location.href = '/web-forge'
- }
+}
 
- function changea(){
+function changea() {
   window.location.href = '/about'
- }
- 
- function changecu(){
+}
+
+function changecu() {
   window.location.href = '/contact'
- }
- function refresh(){
+}
+function changem() {
+  window.location.href = '/menu'
+}
+
+function refresh() {
   window.location.href = '/'
- }
+}

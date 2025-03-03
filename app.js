@@ -15,10 +15,15 @@ app.get("/web-forge",(req,res)=>{
 })
 
 app.get("/about",(req,res)=>{
-    res.send("about")
+    res.render("about")
 })
 app.get("/contact",(req,res)=>{
     res.send("contact")
 })
+
+app.get("/menu",(req,res)=>{
+    res.render("menu")
+})
+
 
 app.listen(3000)

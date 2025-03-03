@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mind Your Own Frontend</title>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/moonhouse");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&display=swap");
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="page1">
+        <div id="menubar">
+          <div id="top">
+            <i id="close" class="ri-close-line"></i>
+          </div>
+          <div id="content">
+            <div class="menu-content">
+              <h2 onclick="changewf()">WebForge</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="menu-content">
+              <h2 onclick="changea()">About Us</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="menu-content">
+              <h2 onclick="changecu()">contact</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="menu-content">
+              <h2>Login</h2>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+        <div id="nav">
+          <div id="n1">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <h2 onclick="refresh()">M.Y.O.F</h2>
+          </div>
+          <div id="n2">
+            <div>
+              <h2 onclick="changewf()">Webforge</h2>
+            </div>
+            <div>
+              <h2 onclick="changea()">about us</h2>
+            </div>
+            <div>
+              <h2 onclick="changecu()">contact</h2>
+            </div>
+            <div>
+              <h2><i class="ri-account-circle-line"></i></h2>
+            </div>
+          </div>
+          <div id="n3">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
