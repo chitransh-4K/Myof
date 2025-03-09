@@ -14,7 +14,7 @@ body {
 #main {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #0C0C0C;
 }
 
 #page1 {
@@ -132,9 +132,6 @@ body {
 #middle{
   width: 100%;
   height: calc(100% - 60px);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 .swiper {
   width: 100%;
@@ -144,104 +141,104 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background-color: black;
-  color: black;
+  background: #000;
+  color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
-.swiper-slide .last{
-  height: 50%;
-}
-.swiper-slide img {
-  display: block;
+#info{
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-.learnings{
-  /* background-color: #a83232; */
-  width: 30%;
-  height: 90%;
-  border-radius: 10px;
-  padding: 5px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-evenly;
+}
+.card{
+  border-radius: 20px;
+  width: 30%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   flex-direction: column;
+
 }
 .content-part{
-  width: 100%;
-  height: 83%;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid rgb(14, 13, 13);;
+    width: 95%;
+    height: 85%;
+    border-radius: 15px;
+    overflow: hidden;
 }
-.upper{
+.upper1{
   width: 100%;
   height: 45%;
-  background-color: black;
+  background-color: white;
+  overflow: hidden;
+  background-image: url(https://thumbs.dreamstime.com/b/html-css-js-icon-set-web-development-logo-icon-set-html-css-javascript-programming-symbol-html-css-js-icon-set-web-178080904.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid white;
+
 }
-.upper img{
+.upper2{
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  height: 45%;
+  background-color: white;
+  overflow: hidden;
+  background-image: url(https://www.skcript.com/_astro/web-animation-with-gsap_Z1uzBqc.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+.upper3{
+  width: 100%;
+  height: 45%;
+  background-color: white;
+  overflow: hidden;
+  background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*yjH3SiDaVWtpBX0g_2q68g.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .lower{
   width: 100%;
   height: 55%;
-  background-color: rgb(14, 13, 13);
-  /* display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-direction: column; */
-  padding: 15px;
+  background-color: #171717;
   text-align: left;
-  color: white;
-
+  padding: 20px;
+  font-size: 4vh;
+  letter-spacing: 1px;
 }
-.lower h2{
-  font-size: 4vw;
-  margin-left: 15px;
+ul{
+  padding-left: 30px;
+  font-size: 3vh;
 }
 .button{
-  width: 100%;
-  height: 15%;
-  border-radius: 10px;
+  border-radius: 15px;
+  height: 10%;
+  width: 95%;
   background-color: #118B50;
-  font-size: 2rem;
+  color: #000;
   display: flex;
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
+  align-items: center;
 }
 .button p{
-  cursor:pointer
+  font-size: 6vh;
+}
+hr{
+  margin: 20px;
 }
 #footer{
-  /* background-color: aqua; */
   width: 100%;
-  color: white;
-  height: 100%;
   padding: 50px;
 }
-#f-mid{
-  width: 100%;
-  height: 90%;
-  background-color: black;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#f-mid h2{
-  font-size: 18vh;
-  line-height: 15vh
-}
-#footer p{
-  margin: 5px;
+#footer h2{
+  font-size: 8.5vw;
+  line-height: 7vw;
 }
 
 @media (max-width: 600px) {
@@ -276,43 +273,90 @@ body {
     width: 15%;
     font-size: 8vw;
   }
-.swiper-slide{
-  flex-direction: column;
+  #info{
+    flex-direction: column;
+    gap: 25px;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+  }
+  .content-part{
+    width: 95%;
+    height: 90%;
+    border-radius: 15px;
+    overflow: hidden;
 }
-#middle{
-  flex-shrink: initial;
-  flex-wrap: nowrap;
-  overflow-y: initial;
-  /* margin: 30px; */
-}
-.learnings{
-  width: 85%;
-  height: 100%;
-}
-.swiper-slide {
-  gap: 40px;
-  height: 100%;
-  text-align: center;
-  font-size: 18px;
-  background-color: black;
-  color: black;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.swiper-wrapper{
-  gap: 40px;
-}
+  .card{
+    border-radius: 10px;
+    width: 80%;
+    height: 28%;
+    flex-shrink: 0;
+    gap: 10px;
 
-#footer{
-  padding: 20px;
-  padding-bottom: 90px;
-}
-#f-mid h2{
-  font-size: 11vh;
-  line-height: 9vh
-}
-#f-mid h2 i{
-  margin: 5px;
-}
+  }
+  .upper1{
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    overflow: hidden;
+    background-image: url(https://thumbs.dreamstime.com/b/html-css-js-icon-set-web-development-logo-icon-set-html-css-javascript-programming-symbol-html-css-js-icon-set-web-178080904.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+  }
+  .upper2{
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    overflow: hidden;
+    background-image: url(https://www.skcript.com/_astro/web-animation-with-gsap_Z1uzBqc.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .upper3{
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    overflow: hidden;
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*yjH3SiDaVWtpBX0g_2q68g.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .lower{
+    width: 100%;
+    height: 55%;
+    background-color: #171717;
+    padding: 10px;
+    font-size: 3.8vw;
+    letter-spacing: 1px;
+  }
+  ul{
+    padding-left: 18px;
+    font-size: 2.8vw;
+  }
+  .button{
+    border-radius: 8px;
+    height: 15%;
+    width: 95%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button p{
+    font-size: 7vw;
+  }
+  hr{
+    margin: 10px;
+  }
+  #footer{
+    width: 100%;
+    padding: 20px;
+  }
+  #footer h2{
+    font-size: 11vh;
+    line-height: 9.5vh;
+  }
 }

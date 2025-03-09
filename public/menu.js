@@ -1,34 +1,16 @@
-// Initialize Lenis
-const lenis = new Lenis();
+// // Initialize Lenis smooth scrolling
+// const lenis = new Lenis();
 
-// Use requestAnimationFrame to continuously update the scroll
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
+// // Use requestAnimationFrame to continuously update the scroll
+// function raf(time) {
+//   lenis.raf(time);
+//   requestAnimationFrame(raf);
+// }
 
-requestAnimationFrame(raf);
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+// requestAnimationFrame(raf);
 
 
-// init Swiper:
-const swiper = new Swiper('.myswiper', {
-  // configure Swiper to use modules
-  modules: [Navigation, Pagination],
-  direction: "vertical",
-    slidesPerView: 1,
-    spaceBetween: 30,
-    mousewheel: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-});
+
 let menubar = document.getElementById("menubar");
 let n3 = document.getElementById("n3")
 let close = document.getElementById("close")
