@@ -1,7 +1,11 @@
+
+
 let loader = document.getElementById("loader");
 let menubar = document.getElementById("menubar");
 let n3 = document.getElementById("n3")
 let close = document.getElementById("close")
+const ticker = document.querySelector('.ticker');
+
 
 
 let cn = 0;
@@ -14,7 +18,17 @@ let i = setInterval(() => {
   }
 }, 30);
 
+ticker.addEventListener('mouseover', () => {
+  document.querySelectorAll('.ticker-content').forEach(content => {
+    content.style.animationPlayState = 'paused';
+  });
+});
 
+ticker.addEventListener('mouseout', () => {
+  document.querySelectorAll('.ticker-content').forEach(content => {
+    content.style.animationPlayState = 'running';
+  });
+});
 
 let tl = gsap.timeline();
 
@@ -70,6 +84,8 @@ close.addEventListener("click", function () {
     duration: 0.5
   })
 })
+            
+
 function changewf() {
   window.location.href = '/web-forge'
 }

@@ -1,13 +1,13 @@
-// // Initialize Lenis smooth scrolling
-// const lenis = new Lenis();
+// Initialize Lenis smooth scrolling
+const lenis = new Lenis();
 
-// // Use requestAnimationFrame to continuously update the scroll
-// function raf(time) {
-//   lenis.raf(time);
-//   requestAnimationFrame(raf);
-// }
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
 
-// requestAnimationFrame(raf);
+requestAnimationFrame(raf);
 
 
 
